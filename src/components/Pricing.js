@@ -12,14 +12,7 @@ const Pricing = ({ data }) => (
           <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
             ${price.price}
           </h2>
-          <p className="has-text-weight-semibold">{price.description}</p>
-          <ul>
-            {price.items.map((item) => (
-              <li key={item} className="is-size-5">
-                {item}
-              </li>
-            ))}
-          </ul>
+          <p className="has-text-weight-semibold has-text-centered">{price.description}</p>
         </section>
       </div>
     ))}
@@ -32,7 +25,6 @@ Pricing.propTypes = {
       plan: PropTypes.string,
       price: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
       description: PropTypes.string,
-      items: PropTypes.array,
     })
   ),
 }
