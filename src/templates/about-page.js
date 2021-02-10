@@ -8,7 +8,7 @@ export const AboutPageTemplate = ({ title, content, contentComponent, subtitle }
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
+    <section className="section section--gradient" id="about">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -35,35 +35,35 @@ AboutPageTemplate.propTypes = {
   contentComponent: PropTypes.func,
 }
 
-const AboutPage = ({ data }) => {
-  const { markdownRemark: post } = data
+// const AboutPage = ({ data }) => {
+//   const { markdownRemark: post } = data
 
-  return (
-    <Layout>
-      <AboutPageTemplate
-        contentComponent={HTMLContent}
-        title={post.frontmatter.title}
-        subtitle={post.frontmatter.subtitle}
-        content={post.html}
-      />
-    </Layout>
-  )
-}
+//   return (
+//     <Layout>
+//       <AboutPageTemplate
+//         contentComponent={HTMLContent}
+//         title={post.frontmatter.title}
+//         subtitle={post.frontmatter.subtitle}
+//         content={post.html}
+//       />
+//     </Layout>
+//   )
+// }
 
-AboutPage.propTypes = {
-  data: PropTypes.object.isRequired,
-}
+// AboutPage.propTypes = {
+//   data: PropTypes.object.isRequired,
+// }
 
-export default AboutPage
+// export default AboutPage
 
-export const aboutPageQuery = graphql`
-  query AboutPage($id: String!) {
-    markdownRemark(id: { eq: $id }) {
-      html
-      frontmatter {
-        title
-        subtitle
-      }
-    }
-  }
-`
+// export const aboutPageQuery = graphql`
+//   query AboutPage($id: String!) {
+//     markdownRemark(id: { eq: $id }) {
+//       html
+//       frontmatter {
+//         title
+//         subtitle
+//       }
+//     }
+//   }
+// `
