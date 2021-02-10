@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: H2O Swimming
-image: /img/home-jumbotron.jpg
+image: /img/swimming-pool-emtpy.jpg
 heading: H2O Swimming
 subheading: Two Parts Heart, One Part Obsession
 mainpitch:
