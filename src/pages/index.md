@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
-image: /img/swimming-pool-emtpy.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+title: H2O Swimming
+image: /img/home-jumbotron.jpg
+heading: H2O Swimming
+subheading: Two Parts Heart, One Part Obsession
 mainpitch:
   title: Why Kaldi
   description: >

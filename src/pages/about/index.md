@@ -1,7 +1,8 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About Coach Jenny
+title: About Two Parts Heart One Part Obsession
+subtitle: Coach Jenny
 ---
 
 Coach Jenny grew up in Texas where she began swimming as a tadpole. She continued her swim career all the way through high school where she played water polo and was on the dive team for Sterling High School. She moved with her family to Kingwood Texas in 2012 and had her first experience with NWAL with the Forest Cove Frogs, where her children were swimmers. She began coaching at NEHA and then coached the Tidal Wave team for Blue Tide Aquatics in 2015, both year round USA competition teams.
