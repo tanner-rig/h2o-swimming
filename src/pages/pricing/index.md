@@ -2,8 +2,8 @@
 templateKey: 'pricing-page'
 path: /pricing
 hours: 
-  heading: 'Hours'
-  description: '10am - 3pm'
+  - heading: 'Hours'
+  - description: '10am - 3pm'
 image: /img/boy-swimming.jpg
 pricing:
   heading: 'Base Rates'

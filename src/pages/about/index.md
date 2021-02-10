@@ -1,7 +1,7 @@
 ---
 templateKey: 'about-page'
 path: /about
-title: About Two Parts Heart One Part Obsession
+title: About Two Parts Heart One Part Obsession (H2O)
 subtitle: Coach Jenny
 ---
 
