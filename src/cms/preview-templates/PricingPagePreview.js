@@ -13,6 +13,11 @@ const PricingPagePreview = ({ entry, getAsset }) => {
         description: entry.getIn(['data', 'pricing', 'description']),
         plans: pricingPlans,
       }}
+      image={entry.get(['data', 'image'])}
+      hours={{
+        heading: entry.getIn(['data', 'hours', 'heading']),
+        description: entry.getIn(['data', 'hours', 'description']),
+      }}
     />
   )
 }
