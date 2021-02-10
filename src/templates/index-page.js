@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import {AboutPageTemplate} from "./about-page";
-import {PricingPageTemplate} from "./pricing-page";
+import { AboutSection } from "./about-section";
+import { PricingSection } from "./pricing-section";
 
 export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
+  console.log('about: ', about)
   return (
     <div>
       <div
@@ -90,14 +91,12 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           </div>
         </div>
       </section>
-      <AboutPageTemplate
+      <AboutSection
         title={about.title}
         subtitle={about.subtitle}
-        content={""}
+        body={about.body}
       />
-      <PricingPageTemplate
-        pricing={pricing}
-      />
+      <PricingSection pricing={pricing} />
     </div>
   );
 };
@@ -111,8 +110,6 @@ IndexPageTemplate.propTypes = {
 
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
-  console.log('frontmatter: ', frontmatter)
 
   return (
     <Layout>
@@ -149,6 +146,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          signup
           heading
           subheading
           mainpitch {
@@ -160,11 +158,11 @@ export const pageQuery = graphql`
         hours {
           heading
           description
-          
         }
         pricing {
           heading
           description
+          venmo
           image {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
@@ -181,6 +179,15 @@ export const pageQuery = graphql`
         about {
           title
           subtitle
+          body
+        }
+        contact {
+          email
+        }
+        waiver {
+          title
+          description
+          waiverLink
         }
       }
     }
