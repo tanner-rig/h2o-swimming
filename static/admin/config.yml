@@ -35,6 +35,7 @@ collections:
                   { label: "Subtitle", name: "subheading", widget: "string" },
                   { label: "Sign up link", name: "signup", widget: "string" },
                   { label: Background Image, name: image, widget: "image" },
+                  { label: Logo, name: logo, widget: "image" },
                   {
                     label: "Main",
                     name: mainpitch,
@@ -42,6 +43,7 @@ collections:
                     fields:
                       [
                         { label: Title, name: title, widget: "string" },
+                        { label: "Image", name: "image", widget: "image" },
                         {
                           label: Description,
                           name: description,
@@ -51,16 +53,6 @@ collections:
                   },
                   { label: "Heading", name: "heading", widget: "string" },
                   { label: Description, name: description, widget: "text" },
-                ],
-            }
-          - {
-              label: "Hours",
-              name: "hours",
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: "string" },
-                  { label: Description, name: description, widget: "markdown" },
                 ],
             }
           - {
@@ -91,6 +83,32 @@ collections:
                 ],
             }
           - {
+              label: "Hours",
+              name: "hours",
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: "string" },
+                  { label: Description, name: description, widget: "string" },
+                  { label: "Image", name: "image", widget: "image" },
+                  {
+                    label: Days,
+                    name: days,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Day, name: day, widget: "string" },
+                        { label: Topic, name: topic, widget: "string" },
+                        {
+                          label: Description,
+                          name: description,
+                          widget: "string",
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
               label: About,
               name: about,
               widget: object,
@@ -98,16 +116,8 @@ collections:
                 [
                   { label: "Title", name: "title", widget: "string" },
                   { label: "Subtitle", name: "subtitle", widget: "string" },
+                  { label: "Image", name: "image", widget: "image" },
                   { label: "Body", name: "body", widget: "markdown" },
-                ],
-            }
-          - {
-              label: Contact,
-              name: contact,
-              widget: object,
-              fields:
-                [
-                  { label: "Contact us description", name: "description", widget: "markdown" },
                 ],
             }
           - {
@@ -119,5 +129,15 @@ collections:
                   { label: "Title", name: "title", widget: "string" },
                   { label: "Description", name: "description", widget: "string" },
                   { label: "Waiver Link", name: "waiverLink", widget: "string" },
+                ],
+            }
+          - {
+              label: Contact,
+              name: contact,
+              widget: object,
+              fields:
+                [
+                  { label: "Contact us description", name: "description", widget: "markdown" },
+                  { label: "Image", name: "image", widget: "image" },
                 ],
             }

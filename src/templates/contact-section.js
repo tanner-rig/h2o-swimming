@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const ContactSection = ({ description }) => {
+export const ContactSection = ({ description, image }) => {
   return (
     <section
       className="section-wrap section--gradient colored-section"
@@ -15,7 +15,23 @@ export const ContactSection = ({ description }) => {
                 Contact us
               </h2>
               <div>
-              {description}
+                <div
+                  className="content"
+                  dangerouslySetInnerHTML={{ __html: description }}
+                />
+              </div>
+              <div>
+                {image && (
+                  <img
+                    src={
+                      !!image.childImageSharp
+                        ? image.childImageSharp.fluid.src
+                        : image
+                    }
+                    alt="Jenny's pool"
+                    style={{ height: 270, marginTop: 45 }}
+                  />
+                )}
               </div>
             </div>
           </div>
