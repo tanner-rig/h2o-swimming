@@ -80,13 +80,13 @@ export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact
                       <p>{main.description}</p>
                     </div>
                   </div>
-                  <div className="columns">
+                  {main.signup && <div className="columns">
                     <div className="column is-12">
-                      <Link className="btn" to="/pricing">
+                      <a className="btn" href={main.signup} target='_blank'>
                         Sign up
-                      </Link>
+                      </a>
                     </div>
-                  </div>
+                  </div>}
                 </div>
               </div>
             </div>
@@ -106,7 +106,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact
         waiverLink={waiver.waiverLink}
       />
       <ContactSection
-        email={contact.email}
+        description={contact.description}
       />
     </div>
   );
@@ -195,7 +195,7 @@ export const pageQuery = graphql`
           body
         }
         contact {
-          email
+          description
         }
         waiver {
           title

@@ -9,8 +9,8 @@ const Footer = class extends React.Component {
   render() {
     return (
       <footer className="footer">
-        <div className="content has-text-centered">
-          <div className="container">
+        <div className="content">
+          <div className="container has-text-centered">
             <div
               style={{
                 maxWidth: "100vw",
