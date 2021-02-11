@@ -5,9 +5,11 @@ import { Link, graphql } from "gatsby";
 import Layout from "../components/Layout";
 import { AboutSection } from "./about-section";
 import { PricingSection } from "./pricing-section";
+import { ContactSection } from "./contact-section";
+import { WaiverSection } from "./waiver-section";
+import { HoursSection } from "./hours-section";
 
-export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
-  console.log('about: ', about)
+export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact }) => {
   return (
     <div>
       <div
@@ -35,7 +37,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           <h1
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
-              backgroundColor: "rgb(255, 255, 255, .2)",
+              backgroundColor: "rgb(255, 255, 255, .3)",
               color: "white",
               lineHeight: "1",
               padding: "0.25em",
@@ -46,7 +48,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           <h3
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
-              backgroundColor: "rgb(255, 255, 255, .2)",
+              backgroundColor: "rgb(255, 255, 255, .3)",
               color: "white",
               lineHeight: "1",
               padding: "0.25em",
@@ -56,7 +58,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           </h3>
         </div>
       </div>
-      <section className="section section--gradient">
+      <section className="section-wrap section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -79,7 +81,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
                     </div>
                   </div>
                   <div className="columns">
-                    <div className="column is-12 has-text-centered">
+                    <div className="column is-12">
                       <Link className="btn" to="/pricing">
                         Sign up
                       </Link>
@@ -91,12 +93,21 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           </div>
         </div>
       </section>
+      <PricingSection pricing={pricing} />
+      <HoursSection hours={hours} />
       <AboutSection
         title={about.title}
         subtitle={about.subtitle}
         body={about.body}
       />
-      <PricingSection pricing={pricing} />
+      <WaiverSection
+        title={waiver.title}
+        description={waiver.description}
+        waiverLink={waiver.waiverLink}
+      />
+      <ContactSection
+        email={contact.email}
+      />
     </div>
   );
 };
@@ -118,6 +129,8 @@ const IndexPage = ({ data }) => {
         hours={frontmatter.hours}
         about={frontmatter.about}
         pricing={frontmatter.pricing}
+        contact={frontmatter.contact}
+        waiver={frontmatter.waiver}
       />
     </Layout>
   );

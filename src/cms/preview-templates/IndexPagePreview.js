@@ -13,7 +13,8 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         hours={data.hours}
         pricing={data.pricing}
         about={data.about}
-        // aboutContent={widgetFor('body')}
+        contact={data.contact}
+        waiver={data.waiver}
       />
     )
   } else {

@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Content, { HTMLContent } from '../components/Content'
 
-export const AboutPageTemplate = ({ title, content, subtitle }) => {
+export const WaiverSection = ({ title, description, waiverLink }) => {
 
   return (
-    <section className="section section--gradient" id="about">
+    <section className="section-wrap section--gradient" id="waiver">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -14,9 +13,15 @@ export const AboutPageTemplate = ({ title, content, subtitle }) => {
                 {title}
               </h2>
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
-                {subtitle}
+                {description}
               </h3>
-              <Content className="content" content={content} />
+              <div className="columns">
+                    <div className="column is-12">
+                      <a className="btn" href={waiverLink} target="_blank">
+                        View waiver
+                      </a>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
@@ -25,8 +30,8 @@ export const AboutPageTemplate = ({ title, content, subtitle }) => {
   )
 }
 
-AboutPageTemplate.propTypes = {
+WaiverSection.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
-  content: PropTypes.string,
+  description: PropTypes.string.isRequired,
+  waiverLink: PropTypes.string.isRequired,
 }

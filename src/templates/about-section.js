@@ -5,7 +5,7 @@ export const AboutSection = ({ title, body, subtitle }) => {
   console.log("BODY: ", body);
 
   return (
-    <section className="section section--gradient" id="about">
+    <section className="section-wrap section--gradient colored-section" id="about">
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -27,6 +27,6 @@ export const AboutSection = ({ title, body, subtitle }) => {
 
 AboutSection.propTypes = {
   title: PropTypes.string.isRequired,
-  subtitle: PropTypes.string.isRequired,
+  subtitle: PropTypes.string,
   content: PropTypes.string,
 };
