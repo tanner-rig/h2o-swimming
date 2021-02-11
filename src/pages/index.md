@@ -3,7 +3,7 @@ templateKey: index-page
 main:
   title: H2O Swimming
   image: /img/swimming-pool-emtpy.jpg
-  logo: /img/logo23.png
+  logo: /img/main-logo.png
   heading: ""
   subheading: Two Parts Heart, One Part Obsession
   signup: www.google.com
