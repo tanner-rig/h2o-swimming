@@ -3,10 +3,13 @@ import PropTypes from "prop-types";
 import { Link, graphql } from "gatsby";
 
 import Layout from "../components/Layout";
-import {AboutPageTemplate} from "./about-page";
-import {PricingPageTemplate} from "./pricing-page";
+import { AboutSection } from "./about-section";
+import { PricingSection } from "./pricing-section";
+import { ContactSection } from "./contact-section";
+import { WaiverSection } from "./waiver-section";
+import { HoursSection } from "./hours-section";
 
-export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
+export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact }) => {
   return (
     <div>
       <div
@@ -34,7 +37,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           <h1
             className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
             style={{
-              backgroundColor: "rgb(255, 255, 255, .2)",
+              backgroundColor: "rgb(255, 255, 255, .3)",
               color: "white",
               lineHeight: "1",
               padding: "0.25em",
@@ -45,7 +48,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           <h3
             className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
             style={{
-              backgroundColor: "rgb(255, 255, 255, .2)",
+              backgroundColor: "rgb(255, 255, 255, .3)",
               color: "white",
               lineHeight: "1",
               padding: "0.25em",
@@ -55,7 +58,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           </h3>
         </div>
       </div>
-      <section className="section section--gradient">
+      <section className="section-wrap section--gradient">
         <div className="container">
           <div className="section">
             <div className="columns">
@@ -78,7 +81,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
                     </div>
                   </div>
                   <div className="columns">
-                    <div className="column is-12 has-text-centered">
+                    <div className="column is-12">
                       <Link className="btn" to="/pricing">
                         Sign up
                       </Link>
@@ -90,13 +93,20 @@ export const IndexPageTemplate = ({ main, hours, pricing, about }) => {
           </div>
         </div>
       </section>
-      <AboutPageTemplate
+      <PricingSection pricing={pricing} />
+      <HoursSection hours={hours} />
+      <AboutSection
         title={about.title}
         subtitle={about.subtitle}
-        content={""}
+        body={about.body}
       />
-      <PricingPageTemplate
-        pricing={pricing}
+      <WaiverSection
+        title={waiver.title}
+        description={waiver.description}
+        waiverLink={waiver.waiverLink}
+      />
+      <ContactSection
+        email={contact.email}
       />
     </div>
   );
@@ -112,8 +122,6 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  console.log('frontmatter: ', frontmatter)
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -121,6 +129,8 @@ const IndexPage = ({ data }) => {
         hours={frontmatter.hours}
         about={frontmatter.about}
         pricing={frontmatter.pricing}
+        contact={frontmatter.contact}
+        waiver={frontmatter.waiver}
       />
     </Layout>
   );
@@ -149,6 +159,7 @@ export const pageQuery = graphql`
               }
             }
           }
+          signup
           heading
           subheading
           mainpitch {
@@ -160,11 +171,11 @@ export const pageQuery = graphql`
         hours {
           heading
           description
-          
         }
         pricing {
           heading
           description
+          venmo
           image {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
@@ -181,6 +192,15 @@ export const pageQuery = graphql`
         about {
           title
           subtitle
+          body
+        }
+        contact {
+          email
+        }
+        waiver {
+          title
+          description
+          waiverLink
         }
       }
     }
