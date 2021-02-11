@@ -41,7 +41,7 @@ about:
   subtitle: Coach Jenny
   body: Big about section
 contact:
-  email: jenagentmorris@yahoo.com
+  description: jenagentmorris@yahoo.com
 waiver:
   title: Waiver Agreement
   description: Each swimmer will need to sign a waiver agreement before beginning lessons

@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const ContactSection = ({ email }) => {
+export const ContactSection = ({ description }) => {
   return (
     <section
       className="section-wrap section--gradient colored-section"
@@ -15,12 +15,7 @@ export const ContactSection = ({ email }) => {
                 Contact us
               </h2>
               <div>
-                Contact Coach Jenny at <a href={`mailto:${email}`}>{email}</a>
-              </div>
-              <div style={{ width: 500, paddingTop: 16, fontWeight: 500 }}>
-                *Please include full name, child’s full name (if you are the
-                parent/guardian), any previous swim expereince and class you’d
-                like to sign up for.{" "}
+              {description}
               </div>
             </div>
           </div>
