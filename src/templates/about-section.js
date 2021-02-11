@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const AboutSection = ({ title, body, subtitle }) => {
-  console.log("BODY: ", body);
-
+export const AboutSection = ({ title, body, subtitle, image }) => {
   return (
-    <section className="section-wrap section--gradient colored-section" id="about">
+    <section
+      className="section-wrap section--gradient colored-section"
+      id="about"
+    >
       <div className="container">
         <div className="columns">
           <div className="column is-10 is-offset-1">
@@ -16,7 +17,23 @@ export const AboutSection = ({ title, body, subtitle }) => {
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                 {subtitle}
               </h3>
-              <div className="content" dangerouslySetInnerHTML={{ __html: body}} />
+              <div className="about-content-wrap">
+                <div
+                  className="content about-content"
+                  dangerouslySetInnerHTML={{ __html: body }}
+                />
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <img
+                    src={
+                      !!image.childImageSharp
+                        ? image.childImageSharp.fluid.src
+                        : image
+                    }
+                    alt="coach jenny"
+                    style={{ height: 350, width: 262.45 }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>

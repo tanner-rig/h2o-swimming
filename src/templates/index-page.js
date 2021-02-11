@@ -41,28 +41,15 @@ export const IndexPageTemplate = ({
             flexDirection: "column",
           }}
         >
-          <h1
-            className="has-text-weight-bold is-size-3-mobile is-size-2-tablet is-size-1-widescreen"
-            style={{
-              backgroundColor: "rgb(255, 255, 255, .3)",
-              color: "white",
-              lineHeight: "1",
-              padding: "0.25em",
-            }}
-          >
-            {main.title}
-          </h1>
-          <h3
-            className="has-text-weight-bold is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
-            style={{
-              backgroundColor: "rgb(255, 255, 255, .3)",
-              color: "white",
-              lineHeight: "1",
-              padding: "0.25em",
-            }}
-          >
-            {main.subheading}
-          </h3>
+          <img
+            src={
+              !!main.logo.childImageSharp
+                ? main.logo.childImageSharp.fluid.src
+                : main.logo
+            }
+            alt="coach jenny"
+            style={{ height: 260, marginTop: 45 }}
+          />
         </div>
       </div>
       <section className="section-wrap section--gradient">
@@ -87,15 +74,31 @@ export const IndexPageTemplate = ({
                       <p>{main.description}</p>
                     </div>
                   </div>
-                  {main.signup && (
-                    <div className="columns">
-                      <div className="column is-12">
-                        <a className="btn" href={main.signup} target="_blank" rel="noreferrer">
-                          Sign up
-                        </a>
+                  <div className="sign-up">
+                    {main.signup && (
+                      <div className="columns">
+                        <div className="column is-12 signup-btn">
+                          <a
+                            className="btn"
+                            href={main.signup}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            Sign up
+                          </a>
+                        </div>
                       </div>
-                    </div>
-                  )}
+                    )}
+                    <img
+                      src={
+                        !!main.mainpitch.image.childImageSharp
+                          ? main.mainpitch.image.childImageSharp.fluid.src
+                          : main.mainpitch.image
+                      }
+                      alt="Jenny's pool"
+                      style={{ height: 270 }}
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -115,7 +118,7 @@ export const IndexPageTemplate = ({
         description={waiver.description}
         waiverLink={waiver.waiverLink}
       />
-      <ContactSection description={contact.description} />
+      <ContactSection description={contact.description} image={contact.image} />
     </div>
   );
 };
@@ -167,12 +170,26 @@ export const pageQuery = graphql`
               }
             }
           }
+          logo {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           signup
           heading
           subheading
           mainpitch {
             title
             description
+            image {
+              childImageSharp {
+                fluid(maxWidth: 2048, quality: 100) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
           description
         }
@@ -196,6 +213,18 @@ export const pageQuery = graphql`
         hours {
           heading
           description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          days {
+            description
+            day
+            topic
+          }
         }
         about {
           title
@@ -216,6 +245,13 @@ export const pageQuery = graphql`
         }
         contact {
           description
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
         }
       }
     }

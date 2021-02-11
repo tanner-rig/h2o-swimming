@@ -18,8 +18,8 @@ const Footer = class extends React.Component {
               }}
               className="columns"
             >
-              <img src={logo} alt="H2O Swimming logo" style={{ height: "1em" }} />
-              <div className="column is-4 social">
+              <img src={logo} alt="H2O Swimming logo" style={{ height: "4em" }} />
+              <div className="column social">
                 <a title="facebook" href="https://www.facebook.com/profile.php?id=100009389561256">
                   <img
                     src={facebook}
