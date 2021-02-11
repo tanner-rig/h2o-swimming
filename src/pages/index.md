@@ -16,9 +16,6 @@ main:
       coffee shouldn't just taste good, it should do good too. We source all of
       our beans directly from small scale sustainable farmers and make sure part
       of the profits are reinvested in their communities.
-hours:
-  heading: Hours
-  description: 10am - 3pm
 pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson.
@@ -34,6 +31,9 @@ pricing:
     - description: For the swimmers that need semi one on one time
       plan: Semi-private
       price: "45"
+hours:
+  heading: Hours
+  description: 10am - 3pm
 about:
   title: About Two Parts Heart One Part Obsession (H2O)
   subtitle: Coach Jenny
@@ -47,15 +47,19 @@ about:
     in 2015, both year round USA competition teams.
 
 
-    She has worked as a certified swim instructor teaching children and adults to swim at the YMCA in Kingwood. She also developed and started a program while there for home schooled swimming families, under the instruction of Kim Kelly and co coach Jan Preston. She was responsible for instruction groups of kids from beginners to advance, both stroke development and technique as well as water safety. Coach Jenny also taught private lessons in the community for both learn to swim and stroke improvement. Her credentials include USA swim, SI and CPR certified. She finds such joy in watching swimmers meet their own goals and expectations, while bringing excitement and fun to the kids.
+
+    She has worked as a certified swim instructor teaching children and adults to swim at the YMCA in Kingwood. She also developed and started a program while there for home schooled swimming families, under the instruction of Kim Kelly and co coach Jan Preston. She was responsible for instruction groups of kids from beginners to advance, both stroke development and technique as well as water safety. 
 
 
-    Coach Jenny has three fish of her own, Jacie - 15, Cole - 13, and Sadie - 9. They are all excited to be here in Utah to enjoy and adapt in their new community. She hopes her passion for the sport of swimming will show through to the swimmers and parents.
-contact:
-  description: Contact Coach Jenny through email at
-    [jenagentmorris@yahoo.com](mailto:jenagentmorris@yahoo.com)
+
+
+    Coach Jenny also taught private lessons in the community for both learn to swim and stroke improvement. Her credentials include USA swim, SI and CPR certified. She finds such joy in watching swimmers meet their own goals and expectations, while bringing excitement and fun to the kids.Coach Jenny has three fish of her own, Jacie - 15, Cole - 13, and Sadie - 9. They are all excited to be here in Utah to enjoy and adapt in their new community. She hopes her passion for the sport of swimming will show through to the swimmers and parents.
+  image: /img/jenny.jpg
 waiver:
   title: Waiver Agreement
   description: Each swimmer will need to sign a waiver agreement before beginning lessons
   waiverLink: https://drive.google.com/file/d/1_eCWiOwxzLBSlh4qPxt86tTiI_51YHyr/view?usp=sharing
+contact:
+  description: Contact Coach Jenny through email at
+    [jenagentmorris@yahoo.com](mailto:jenagentmorris@yahoo.com)
 ---
