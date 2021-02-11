@@ -54,16 +54,6 @@ collections:
                 ],
             }
           - {
-              label: "Hours",
-              name: "hours",
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: "string" },
-                  { label: Description, name: description, widget: "markdown" },
-                ],
-            }
-          - {
               label: Pricing,
               name: pricing,
               widget: object,
@@ -91,6 +81,16 @@ collections:
                 ],
             }
           - {
+              label: "Hours",
+              name: "hours",
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: "string" },
+                  { label: Description, name: description, widget: "markdown" },
+                ],
+            }
+          - {
               label: About,
               name: about,
               widget: object,
@@ -98,16 +98,8 @@ collections:
                 [
                   { label: "Title", name: "title", widget: "string" },
                   { label: "Subtitle", name: "subtitle", widget: "string" },
+                  { label: "Image", name: "image", widget: "image" },
                   { label: "Body", name: "body", widget: "markdown" },
-                ],
-            }
-          - {
-              label: Contact,
-              name: contact,
-              widget: object,
-              fields:
-                [
-                  { label: "Contact us description", name: "description", widget: "markdown" },
                 ],
             }
           - {
@@ -119,5 +111,14 @@ collections:
                   { label: "Title", name: "title", widget: "string" },
                   { label: "Description", name: "description", widget: "string" },
                   { label: "Waiver Link", name: "waiverLink", widget: "string" },
+                ],
+            }
+          - {
+              label: Contact,
+              name: contact,
+              widget: object,
+              fields:
+                [
+                  { label: "Contact us description", name: "description", widget: "markdown" },
                 ],
             }

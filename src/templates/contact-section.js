@@ -15,7 +15,7 @@ export const ContactSection = ({ description }) => {
                 Contact us
               </h2>
               <div>
-              {description}
+              <div className="content" dangerouslySetInnerHTML={{ __html: description}} />
               </div>
             </div>
           </div>

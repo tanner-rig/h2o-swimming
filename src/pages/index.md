@@ -16,9 +16,6 @@ main:
       coffee shouldn't just taste good, it should do good too. We source all of
       our beans directly from small scale sustainable farmers and make sure part
       of the profits are reinvested in their communities.
-hours:
-  heading: Hours
-  description: 10am - 3pm
 pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson.
@@ -34,9 +31,13 @@ pricing:
     - description: For the swimmers that need semi one on one time
       plan: Semi-private
       price: "45"
+hours:
+  heading: Hours
+  description: 10am - 3pm
 about:
   title: About Two Parts Heart One Part Obsession (H2O)
   subtitle: Coach Jenny
+  image: /img/boy-swimming.jpg
   body: >-
     Coach Jenny grew up in Texas where she began swimming as a tadpole. She
     continued her swim career all the way through high school where she played
@@ -51,11 +52,11 @@ about:
 
 
     Coach Jenny has three fish of her own, Jacie - 15, Cole - 13, and Sadie - 9. They are all excited to be here in Utah to enjoy and adapt in their new community. She hopes her passion for the sport of swimming will show through to the swimmers and parents.
-contact:
-  description: Contact Coach Jenny through email at
-    [jenagentmorris@yahoo.com](mailto:jenagentmorris@yahoo.com)
 waiver:
   title: Waiver Agreement
   description: Each swimmer will need to sign a waiver agreement before beginning lessons
   waiverLink: https://drive.google.com/file/d/1_eCWiOwxzLBSlh4qPxt86tTiI_51YHyr/view?usp=sharing
+contact:
+  description: Contact Coach Jenny through email at
+    [jenagentmorris@yahoo.com](mailto:jenagentmorris@yahoo.com)
 ---

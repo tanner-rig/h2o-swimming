@@ -17,7 +17,7 @@ export const WaiverSection = ({ title, description, waiverLink }) => {
               </h3>
               <div className="columns">
                     <div className="column is-12">
-                      <a className="btn" href={waiverLink} target="_blank">
+                      <a className="btn" href={waiverLink} target="_blank" rel="noreferrer">
                         View waiver
                       </a>
                     </div>

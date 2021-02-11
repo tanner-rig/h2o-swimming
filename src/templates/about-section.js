@@ -16,7 +16,7 @@ export const AboutSection = ({ title, body, subtitle }) => {
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">
                 {subtitle}
               </h3>
-              <div className="content">{body}</div>
+              <div className="content" dangerouslySetInnerHTML={{ __html: body}} />
             </div>
           </div>
         </div>
@@ -29,4 +29,5 @@ AboutSection.propTypes = {
   title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
   content: PropTypes.string,
+  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link, graphql } from "gatsby";
+import { graphql } from "gatsby";
 
 import Layout from "../components/Layout";
 import { AboutSection } from "./about-section";
@@ -9,7 +9,14 @@ import { ContactSection } from "./contact-section";
 import { WaiverSection } from "./waiver-section";
 import { HoursSection } from "./hours-section";
 
-export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact }) => {
+export const IndexPageTemplate = ({
+  main,
+  hours,
+  pricing,
+  about,
+  waiver,
+  contact,
+}) => {
   return (
     <div>
       <div
@@ -80,13 +87,15 @@ export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact
                       <p>{main.description}</p>
                     </div>
                   </div>
-                  {main.signup && <div className="columns">
-                    <div className="column is-12">
-                      <a className="btn" href={main.signup} target='_blank'>
-                        Sign up
-                      </a>
+                  {main.signup && (
+                    <div className="columns">
+                      <div className="column is-12">
+                        <a className="btn" href={main.signup} target="_blank" rel="noreferrer">
+                          Sign up
+                        </a>
+                      </div>
                     </div>
-                  </div>}
+                  )}
                 </div>
               </div>
             </div>
@@ -98,6 +107,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact
       <AboutSection
         title={about.title}
         subtitle={about.subtitle}
+        image={about.image}
         body={about.body}
       />
       <WaiverSection
@@ -105,9 +115,7 @@ export const IndexPageTemplate = ({ main, hours, pricing, about, waiver, contact
         description={waiver.description}
         waiverLink={waiver.waiverLink}
       />
-      <ContactSection
-        description={contact.description}
-      />
+      <ContactSection description={contact.description} />
     </div>
   );
 };
@@ -168,10 +176,6 @@ export const pageQuery = graphql`
           }
           description
         }
-        hours {
-          heading
-          description
-        }
         pricing {
           heading
           description
@@ -189,18 +193,29 @@ export const pageQuery = graphql`
             price
           }
         }
+        hours {
+          heading
+          description
+        }
         about {
           title
           subtitle
+          image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
           body
-        }
-        contact {
-          description
         }
         waiver {
           title
           description
           waiverLink
+        }
+        contact {
+          description
         }
       }
     }

@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 
 import logo from "../img/logo.svg";
 import facebook from "../img/social/facebook.svg";
@@ -19,18 +18,16 @@ const Footer = class extends React.Component {
               }}
               className="columns"
             >
-              <div>
-                LOGO
-              </div>
+              <img src={logo} alt="H2O Swimming logo" style={{ height: "1em" }} />
               <div className="column is-4 social">
-                <a title="facebook" href="https://facebook.com">
+                <a title="facebook" href="https://www.facebook.com/profile.php?id=100009389561256">
                   <img
                     src={facebook}
                     alt="Facebook"
                     style={{ width: "1em", height: "1em" }}
                   />
                 </a>
-                <a title="instagram" href="https://instagram.com">
+                <a title="instagram" href="https://www.instagram.com/pinkrainbowdiva/">
                   <img
                     src={instagram}
                     alt="Instagram"
