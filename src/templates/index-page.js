@@ -47,7 +47,7 @@ export const IndexPageTemplate = ({
                 ? main.logo.childImageSharp.fluid.src
                 : main.logo
             }
-            alt="coach jenny"
+            alt="main logo"
             style={{ height: 260, marginTop: 45 }}
           />
         </div>
@@ -84,7 +84,7 @@ export const IndexPageTemplate = ({
                             target="_blank"
                             rel="noreferrer"
                           >
-                            Sign up
+                            Schedule lesson
                           </a>
                         </div>
                       </div>
