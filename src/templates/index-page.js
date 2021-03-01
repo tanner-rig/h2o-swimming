@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useEventListener } from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
@@ -59,19 +59,31 @@ export const IndexPageTemplate = ({
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                    <div className="tile" style={{ display: 'flex', justifyContent: 'center'}}>
-                      <h1 className="title">{main.mainpitch.title}</h1>
+                    <div
+                      className="tile"
+                      style={{ display: "flex", justifyContent: "center" }}
+                    >
+                      <h1 className="title main-title">
+                        {main.mainpitch.title}
+                      </h1>
                     </div>
-                    <div className="tile" style={{ textAlign: 'center'}}>
-                      <h4 >{main.mainpitch.description}</h4>
+                    <div className="tile">
+                      <h4
+                        dangerouslySetInnerHTML={{
+                          __html: main.mainpitch.description,
+                        }}
+                      />
                     </div>
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2" style={{ textAlign: 'center'}}>
+                      <h3
+                        className="has-text-weight-semibold is-size-2"
+                        style={{ textAlign: "center" }}
+                      >
                         {main.heading}
                       </h3>
-                      <p style={{ textAlign: 'center'}}>{main.description}</p>
+                      <p style={{ textAlign: "center" }}>{main.description}</p>
                     </div>
                   </div>
                   <div className="sign-up">
@@ -89,15 +101,6 @@ export const IndexPageTemplate = ({
                         </div>
                       </div>
                     )}
-                    <img
-                      src={
-                        !!main.mainpitch.image.childImageSharp
-                          ? main.mainpitch.image.childImageSharp.fluid.src
-                          : main.mainpitch.image
-                      }
-                      alt="Jenny's pool"
-                      style={{ height: 270 }}
-                    />
                   </div>
                 </div>
               </div>
@@ -105,20 +108,11 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
-      <PricingSection pricing={pricing} />
-      <HoursSection hours={hours} />
-      <AboutSection
-        title={about.title}
-        subtitle={about.subtitle}
-        image={about.image}
-        body={about.body}
-      />
-      <WaiverSection
-        title={waiver.title}
-        description={waiver.description}
-        waiverLink={waiver.waiverLink}
-      />
-      <ContactSection description={contact.description} image={contact.image} />
+      <PricingSection {...pricing} />
+      <HoursSection {...hours} />
+      <AboutSection {...about} />
+      <WaiverSection {...waiver} />
+      <ContactSection {...contact} />
     </div>
   );
 };
@@ -183,13 +177,6 @@ export const pageQuery = graphql`
           mainpitch {
             title
             description
-            image {
-              childImageSharp {
-                fluid(maxWidth: 2048, quality: 100) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
           }
           description
         }
@@ -230,6 +217,13 @@ export const pageQuery = graphql`
           title
           subtitle
           image {
+            childImageSharp {
+              fluid(maxWidth: 2048, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+          backgroundImage {
             childImageSharp {
               fluid(maxWidth: 2048, quality: 100) {
                 ...GatsbyImageSharpFluid

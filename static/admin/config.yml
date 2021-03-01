@@ -43,13 +43,23 @@ collections:
                     fields:
                       [
                         { label: Title, name: title, widget: "string" },
-                        { label: "Image", name: "image", widget: "image" },
+
                         {
                           label: Description,
                           name: description,
-                          widget: "text",
+                          widget: "markdown",
                         },
                       ],
+                  },
+                  {
+                    label: "Learn to Swim Image",
+                    name: "l2sImage",
+                    widget: "image",
+                  },
+                  {
+                    label: "Stroke Development Image",
+                    name: "sdImage",
+                    widget: "image",
                   },
                   { label: "Heading", name: "heading", widget: "string" },
                   { label: Description, name: description, widget: "text" },
@@ -127,8 +137,16 @@ collections:
               fields:
                 [
                   { label: "Title", name: "title", widget: "string" },
-                  { label: "Description", name: "description", widget: "string" },
-                  { label: "Waiver Link", name: "waiverLink", widget: "string" },
+                  {
+                    label: "Description",
+                    name: "description",
+                    widget: "string",
+                  },
+                  {
+                    label: "Waiver Link",
+                    name: "waiverLink",
+                    widget: "string",
+                  },
                 ],
             }
           - {
@@ -137,7 +155,12 @@ collections:
               widget: object,
               fields:
                 [
-                  { label: "Contact us description", name: "description", widget: "markdown" },
+                  {
+                    label: "Contact us description",
+                    name: "description",
+                    widget: "markdown",
+                  },
                   { label: "Image", name: "image", widget: "image" },
+                  { label: "Background Image", name: "backgroundImage", widget: "image" },
                 ],
             }

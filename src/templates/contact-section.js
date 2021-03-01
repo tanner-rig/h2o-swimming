@@ -14,10 +14,7 @@ export const ContactSection = ({ description, image }) => {
         backgroundAttachment: `fixed`,
       }}
     >
-      <div
-        className="container"
-        
-      >
+      <div className="container">
         <div
           className="columns"
           style={{
@@ -33,6 +30,7 @@ export const ContactSection = ({ description, image }) => {
               style={{
                 backgroundColor: "rgb(255, 255, 255, 0.8)",
                 textAlign: "center",
+                borderRadius: "5px",
               }}
             >
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">

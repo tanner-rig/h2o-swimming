@@ -9,22 +9,26 @@ main:
   signup: www.google.com
   description: ""
   mainpitch:
-    title: H2O Swimming Lessons
-    image: /img/pool-wide.jpg
-    description: Goldfish Swim School is the premier learn-to-swim facility for kids ages 4 months to 12 years. We use our holistic philosophy, The Science of SwimPlay®, to build life skills both in and out of the water using play-based learning in a fun and safe environment.
+    title: Safety - Technique - Fun 
+    description: >-
+      At H2O, our <i>current</i> passion is to equip our swimmers the skills required for them to love and safely enjoy the water for the rest of their lives! As swim is a sport for individuals, we cater to the needs of each student and are experienced teaching all ages, levels, and personality types. Our family owned and operated company prioritizes safety, and with 7 years of USA certified practice under our swim caps, we cover correct form and technique to build safe, effective habits. 
+      <br /><br />
+      We take our responsibilities here in our community seriously, and we adore the relationships that come out of having this opportunity to connect with each of our swim families. 
+      <br /><br />
+      If you just keep swimming down the page, you'll find all the information needed to start with this school of fish.
 pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson.
-  image: /img/boy-swimming.jpg
-  venmo: "@tanner-rigby"
+  image: /img/bubbles.jpg
+  venmo: "https://venmo.com/Jennifer-Morris-308"
   plans:
-    - description: For groups up to 10 swimmers
+    - description: For groups of more than 10 swimmers
       plan: Group
       price: "20"
     - description: For the swimmers that need one on one time
       plan: Private
       price: "30"
-    - description: For the swimmers that need semi 1:1 time
+    - description: For groups up to 10 swimmers
       plan: Semi-private
       price: "45"
 hours:
@@ -34,13 +38,13 @@ hours:
   days:
     - day: Tuesday - Thursday
       topic: Learn to swim
-      description: ""
+      description: "Bubbles/face in the water, breath, arms with noodle, legs with kickboard"
     - day: Friday
       topic: Stroke development
-      description: ""
+      description: "Side breathing, streamline, ready position, legal stroke, flip turns"
     - day: Saturday
       topic: Make up day
-      description: ""
+      description: "Make up for lessons that were missed during the week"
 about:
   title: About Two Parts Heart, One Part Obsession (H2O)
   subtitle: Coach Jenny
@@ -51,6 +55,7 @@ about:
     <br /><br />
     Coach Jenny has three fish of her own, Jacie - 15, Cole - 13, and Sadie - 9. They are all excited to be here in Utah to enjoy and adapt in their new community. She hopes her passion for the sport of swimming will show through to the swimmers and parents.
   image: /img/jenny.jpg
+  backgroundImage: /img/boy-jumping.jpg
 waiver:
   title: Waiver Agreement
   description: Each swimmer will need to sign a waiver agreement before beginning lessons

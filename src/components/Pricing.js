@@ -16,7 +16,7 @@ const Pricing = ({ data }) => (
             margin: 16,
           }}
         >
-          <h4 className="has-text-centered has-text-weight-semibold">
+          <h4 className="has-text-centered has-text-weight-semibold is-size-5">
             {price.plan}
           </h4>
           <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">

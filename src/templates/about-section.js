@@ -1,13 +1,37 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-export const AboutSection = ({ title, body, subtitle, image }) => {
+export const AboutSection = ({
+  title,
+  body,
+  subtitle,
+  image,
+  backgroundImage,
+}) => {
   return (
     <section
       className="section-wrap section--gradient colored-section"
       id="about"
+      style={{
+        backgroundImage: `url(${
+          !!backgroundImage.childImageSharp
+            ? backgroundImage.childImageSharp.fluid.src
+            : backgroundImage
+        })`,
+        backgroundAttachment: `fixed`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundPositionX: '50%',
+        padding: '100px 16px'
+      }}
     >
-      <div className="container container-border">
+      <div
+        className="container"
+        style={{
+          backgroundColor: "rgba(255, 255, 255, 0.8)",
+          borderRadius: "5px",
+        }}
+      >
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
