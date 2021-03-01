@@ -12,6 +12,7 @@ export const ContactSection = ({ description, image }) => {
         })`,
         backgroundPosition: `25% 38%`,
         backgroundAttachment: `fixed`,
+        backgroundSize: 'cover'
       }}
     >
       <div className="container">
