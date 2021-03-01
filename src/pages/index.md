@@ -11,7 +11,7 @@ main:
   mainpitch:
     title: Safety - Technique - Fun 
     description: >-
-      At H2O, our <i>current</i> passion is to equip our swimmers the skills required for them to love and safely enjoy the water for the rest of their lives! As swim is a sport for individuals, we cater to the needs of each student and are experienced teaching all ages, levels, and personality types. Our family owned and operated company prioritizes safety, and with 7 years of USA certified practice under our swim caps, we cover correct form and technique to build safe, effective habits. 
+      At H2O, our <i style="color: #00ced1">current</i> passion is to equip our swimmers the skills required for them to love and safely enjoy the water for the rest of their lives! As swim is a sport for individuals, we cater to the needs of each student and are experienced teaching all ages, levels, and personality types. Our family owned and operated company prioritizes safety, and with 7 years of USA certified practice under our swim caps, we cover correct form and technique to build safe, effective habits. 
       <br /><br />
       We take our responsibilities here in our community seriously, and we adore the relationships that come out of having this opportunity to connect with each of our swim families. 
       <br /><br />
