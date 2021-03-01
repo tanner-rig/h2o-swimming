@@ -11,7 +11,7 @@ main:
   mainpitch:
     title: H2O Swimming Lessons
     image: /img/pool-wide.jpg
-    description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    description: Goldfish Swim School is the premier learn-to-swim facility for kids ages 4 months to 12 years. We use our holistic philosophy, The Science of SwimPlay®, to build life skills both in and out of the water using play-based learning in a fun and safe environment.
 pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson.
@@ -24,7 +24,7 @@ pricing:
     - description: For the swimmers that need one on one time
       plan: Private
       price: "30"
-    - description: For the swimmers that need semi one on one time
+    - description: For the swimmers that need semi 1:1 time
       plan: Semi-private
       price: "45"
 hours:
@@ -57,5 +57,5 @@ waiver:
   waiverLink: https://drive.google.com/file/d/1_eCWiOwxzLBSlh4qPxt86tTiI_51YHyr/view?usp=sharing
 contact:
   description: Contact Coach Jenny through email at <a href="mailto:jenagentmorris@yahoo.com">jenagentmorris@yahoo.com</a>
-  image: /img/pool-close.jpg
+  image: /img/swimming-pool-tube.jpg
 ---

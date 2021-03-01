@@ -5,10 +5,10 @@ export const WaiverSection = ({ title, description, waiverLink }) => {
 
   return (
     <section className="section-wrap section--gradient" id="waiver">
-      <div className="container">
+      <div className="container container-border">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <div className="section">
+            <div className="section" style={{ textAlign: 'center'}}>
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>

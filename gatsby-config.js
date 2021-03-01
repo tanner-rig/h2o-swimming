@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'H2O Swimming',
+    title: 'H2O Swimming Lessons',
     description:
-      'H2O Swimming USA',
+      'H2O Swimming Lessons USA',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

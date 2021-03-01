@@ -7,11 +7,14 @@ export const AboutSection = ({ title, body, subtitle, image }) => {
       className="section-wrap section--gradient colored-section"
       id="about"
     >
-      <div className="container">
+      <div className="container container-border">
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h2
+                className="title is-size-3 has-text-weight-bold is-bold-light"
+                style={{ textAlign: "center" }}
+              >
                 {title}
               </h2>
               <h3 className="title is-size-5 has-text-weight-bold is-bold-light">

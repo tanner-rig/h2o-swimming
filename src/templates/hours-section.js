@@ -2,15 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export const HoursSection = ({ hours }) => (
-  <section className="section-wrap section--gradient" id="hours">
-    <div className="container">
+  <section
+    className="section-wrap section--gradient"
+    id="hours"
+  >
+    <div className="container container-border">
       <div className="section">
         <div className="columns">
           <div className="column is-10 is-offset-1">
-            <h2 className="has-text-weight-semibold is-size-2">
-              {hours.heading}
-            </h2>
-            <p className="is-size-5" style={{ paddingBottom: "1rem" }}>{hours.description}</p>
+            <div style={{ textAlign: "center" }}>
+              <h2 className="has-text-weight-semibold is-size-2">
+                {hours.heading}
+              </h2>
+              <p className="is-size-5" style={{ paddingBottom: "1rem" }}>
+                {hours.description}
+              </p>
+            </div>
             <div className="columns">
               {hours.days.map((d) => (
                 <div key={d.plan} className="column">

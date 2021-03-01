@@ -53,25 +53,25 @@ export const IndexPageTemplate = ({
         </div>
       </div>
       <section className="section-wrap section--gradient">
-        <div className="container">
+        <div className="container container-border">
           <div className="section">
             <div className="columns">
               <div className="column is-10 is-offset-1">
                 <div className="content">
                   <div className="content">
-                    <div className="tile">
+                    <div className="tile" style={{ display: 'flex', justifyContent: 'center'}}>
                       <h1 className="title">{main.mainpitch.title}</h1>
                     </div>
-                    <div className="tile">
-                      <h3 className="subtitle">{main.mainpitch.description}</h3>
+                    <div className="tile" style={{ textAlign: 'center'}}>
+                      <h4 >{main.mainpitch.description}</h4>
                     </div>
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
+                      <h3 className="has-text-weight-semibold is-size-2" style={{ textAlign: 'center'}}>
                         {main.heading}
                       </h3>
-                      <p>{main.description}</p>
+                      <p style={{ textAlign: 'center'}}>{main.description}</p>
                     </div>
                   </div>
                   <div className="sign-up">

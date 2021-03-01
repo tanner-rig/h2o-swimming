@@ -4,13 +4,37 @@ import PropTypes from "prop-types";
 export const ContactSection = ({ description, image }) => {
   return (
     <section
-      className="section-wrap section--gradient colored-section"
+      className="section-wrap section--gradient"
       id="contact"
+      style={{
+        backgroundImage: `url(${
+          !!image.childImageSharp ? image.childImageSharp.fluid.src : image
+        })`,
+        backgroundPosition: `25% 38%`,
+        backgroundAttachment: `fixed`,
+      }}
     >
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
+      <div
+        className="container"
+        
+      >
+        <div
+          className="columns"
+          style={{
+            height: "35rem",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <div className="column is-10 is-offset-1" style={{ marginLeft: 0 }}>
+            <div
+              className="section"
+              style={{
+                backgroundColor: "rgb(255, 255, 255, 0.8)",
+                textAlign: "center",
+              }}
+            >
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 Contact us
               </h2>
@@ -19,19 +43,6 @@ export const ContactSection = ({ description, image }) => {
                   className="content"
                   dangerouslySetInnerHTML={{ __html: description }}
                 />
-              </div>
-              <div>
-                {image && (
-                  <img
-                    src={
-                      !!image.childImageSharp
-                        ? image.childImageSharp.fluid.src
-                        : image
-                    }
-                    alt="Jenny's pool"
-                    style={{ height: 270, marginTop: 45 }}
-                  />
-                )}
               </div>
             </div>
           </div>
