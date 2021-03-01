@@ -10,7 +10,7 @@ export const AboutSection = ({
 }) => {
   return (
     <section
-      className="section-wrap section--gradient colored-section bg-image-style"
+      className="section-wrap section--gradient colored-section bg-image-style about-img"
       id="about"
       style={{
         backgroundImage: `url(${
@@ -18,7 +18,6 @@ export const AboutSection = ({
             ? backgroundImage.childImageSharp.fluid.src
             : backgroundImage
         })`,
-        backgroundPositionX: "50%",
         padding: "100px 16px",
       }}
     >
