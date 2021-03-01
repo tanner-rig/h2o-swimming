@@ -4,15 +4,13 @@ import PropTypes from "prop-types";
 export const ContactSection = ({ description, image }) => {
   return (
     <section
-      className="section-wrap section--gradient"
+      className="section-wrap section--gradient bg-image-style"
       id="contact"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition: `25% 38%`,
-        backgroundAttachment: `fixed`,
-        backgroundSize: 'cover'
       }}
     >
       <div className="container">

@@ -12,7 +12,7 @@ export const PricingSection = ({
   venmo,
 }) => (
   <section
-    className="section-wrap section--gradient colored-section"
+    className="section-wrap section--gradient colored-section bg-image-style"
     id="pricing"
     style={{
       backgroundImage: `url(${
