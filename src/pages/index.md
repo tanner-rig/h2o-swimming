@@ -13,9 +13,9 @@ main:
       We take our responsibilities here in our community seriously, and we adore the relationships that come out of having this opportunity to connect with each of our swim families. 
       <br /><br />
       If you just keep swimming down the page, you'll find all the information needed to start with this school of fish.
-  bannerHeading: "ATTENTION"
-  bannerText: "Lessons canceled today due to weather and we dont want you to get struck by lightning"
-  signup: www.google.com
+  bannerHeading: ""
+  bannerText: "Sign ups will be available in May, check back here to schedule lessons!"
+  signup: ""
 pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson per swimmer.
