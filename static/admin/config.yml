@@ -50,16 +50,6 @@ collections:
                         },
                       ],
                   },
-                  {
-                    label: "Learn to Swim Image",
-                    name: "l2sImage",
-                    widget: "image",
-                  },
-                  {
-                    label: "Stroke Development Image",
-                    name: "sdImage",
-                    widget: "image",
-                  },
                   { label: "Banner Heading", name: "bannerHeading", widget: "string" },
                   { label: Banner Text, name: bannerText, widget: "text" },
                   { label: "Sign up link", name: "signup", widget: "string" },

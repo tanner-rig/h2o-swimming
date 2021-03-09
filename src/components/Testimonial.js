@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Testimonial = ({ data }) => (
+const Testimonial = ({ data = [] }) => (
   <div className="pricing-column">
     {data.map((testimonial, i) => (
       <div key={`testimonial-${i}`}>

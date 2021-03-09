@@ -1,6 +1,6 @@
 import React from "react";
 
-export const HoursSection = ({ heading, description, image, days }) => (
+export const HoursSection = ({ heading, description, image, days = [] }) => (
   <section className="section-wrap section--gradient" id="hours">
     <div className="container container-border">
       <div className="section">
