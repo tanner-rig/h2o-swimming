@@ -96,7 +96,7 @@ export const IndexPageTemplate = ({
                       >
                         {main.bannerHeading}
                       </div>
-                      <p style={{ textAlign: "center" }}>{main.bannerText}</p>
+                      <p style={{ textAlign: "center", color: '#000', fontWeight: 'bold' }}>{main.bannerText}</p>
                     </div>
                   </div>
                   <div className="sign-up">
