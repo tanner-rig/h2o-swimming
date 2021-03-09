@@ -16,13 +16,22 @@ const Pricing = ({ data }) => (
             margin: 16,
           }}
         >
-          <h4 className="has-text-centered has-text-weight-semibold is-size-5">
+          <h4
+            className="has-text-centered has-text-weight-semibold is-size-5"
+            style={{ marginTop: "-8px", paddingBottom: 8, fontSize: "1.5rem" }}
+          >
             {price.plan}
           </h4>
-          <h2 className="is-size-1 has-text-weight-bold has-text-primary has-text-centered">
+          <h2
+            className="is-size-1 has-text-weight-bold has-text-primary has-text-centered"
+            style={{ fontSize: "2.2rem" }}
+          >
             {price.price}
           </h2>
-          <p className="has-text-weight-semibold has-text-centered">
+          <p
+            className="has-text-weight-semibold has-text-centered"
+            style={{ fontSize: "0.9rem" }}
+          >
             {price.description}
           </p>
         </section>

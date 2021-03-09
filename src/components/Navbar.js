@@ -58,23 +58,40 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div
-              className="navbar-start has-text-centered"
-              onClick={() => this.toggleHamburger()}
-            >
-              <Link className="navbar-item" to="#about">
+            <div className="navbar-start has-text-centered">
+              <Link
+                className="navbar-item"
+                to="#about"
+                onClick={() => this.toggleHamburger()}
+              >
                 About
               </Link>
-              <Link className="navbar-item" to="#pricing">
+              <Link
+                className="navbar-item"
+                to="#pricing"
+                onClick={() => this.toggleHamburger()}
+              >
                 Pricing
               </Link>
-              <Link className="navbar-item" to="#hours">
+              <Link
+                className="navbar-item"
+                to="#hours"
+                onClick={() => this.toggleHamburger()}
+              >
                 Hours
               </Link>
-              <Link className="navbar-item" to="#waiver">
+              <Link
+                className="navbar-item"
+                to="#waiver"
+                onClick={() => this.toggleHamburger()}
+              >
                 Waiver
               </Link>
-              <Link className="navbar-item" to="#contact">
+              <Link
+                className="navbar-item"
+                to="#contact"
+                onClick={() => this.toggleHamburger()}
+              >
                 Contact
               </Link>
             </div>
