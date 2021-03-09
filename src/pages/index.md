@@ -14,7 +14,7 @@ main:
       <br /><br />
       If you just keep swimming down the page, you'll find all the information needed to start with this school of fish.
   bannerHeading: ""
-  bannerText: "Sign ups will be available in May, check back here to schedule lessons!"
+  bannerText: "Sign ups will be available in May, please check back here to schedule lessons!"
   signup: ""
 pricing:
   heading: Base Rates
