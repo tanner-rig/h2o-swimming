@@ -18,33 +18,30 @@ main:
       If you just keep swimming down the page, you'll find all the information needed to start with this school of fish.
 pricing:
   heading: Base Rates
-  description: Pricing below is per 1/2 hour lesson.
+  description: Pricing below is per 1/2 hour lesson per swimmer.
   image: /img/bubbles.jpg
   venmo: "https://venmo.com/Jennifer-Morris-308"
   plans:
-    - description: For groups of more than 10 swimmers
+    - description: Up to 6 swimmers
       plan: Group
-      price: "20"
+      price: "$20"
     - description: For the swimmers that need one on one time
       plan: Private
-      price: "30"
-    - description: For groups up to 10 swimmers
-      plan: Semi-private
-      price: "45"
+      price: "$30"
+    - description: Pay $30 for the first swimmer then $15 for each additional sibling (must be siblings)
+      plan: Family Rate
+      price: "$30 + $15"
 hours:
   heading: Hours
-  description: Hours are from 10:00am to 3:00pm
+  description: Hours are from 10:00am to 4:30pm
   image: /img/girls-swimming.jpg
   days:
-    - day: Tuesday - Thursday
-      topic: Learn to swim
+    - day: Monday - Wednesday
+      topic: Learn to swim (Group/Private)
       description: "Bubbles/face in the water, breath, arms with noodle, legs with kickboard"
-    - day: Friday
-      topic: Stroke development
+    - day: Thursday
+      topic: Stroke development (Private)
       description: "Side breathing, streamline, ready position, legal stroke, flip turns"
-    - day: Saturday
-      topic: Make up day
-      description: "Make up for lessons that were missed during the week"
 about:
   title: About Two Parts Heart, One Part Obsession (H2O)
   subtitle: Coach Jenny

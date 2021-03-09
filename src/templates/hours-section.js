@@ -51,7 +51,7 @@ export const HoursSection = ({ heading, description, image, days }) => (
                 }
                 alt="kids swimming"
                 style={{
-                  height: 270,
+                  height: 200,
                   marginTop: 45,
                   boxShadow: "0px 31px 35px -19px rgb(0 0 0 / 30%)",
                 }}
