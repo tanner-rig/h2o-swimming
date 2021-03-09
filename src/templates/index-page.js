@@ -1,4 +1,4 @@
-import React, { useEffect, useEventListener } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import { graphql } from "gatsby";
 
@@ -8,14 +8,16 @@ import { PricingSection } from "./pricing-section";
 import { ContactSection } from "./contact-section";
 import { WaiverSection } from "./waiver-section";
 import { HoursSection } from "./hours-section";
+import { TestimonialsSection } from "./testimonials-section";
 
 export const IndexPageTemplate = ({
   main,
   hours,
   pricing,
   about,
+  testimonials,
   waiver,
-  contact,
+  contact
 }) => {
   return (
     <div>
@@ -27,7 +29,7 @@ export const IndexPageTemplate = ({
               ? main.image.childImageSharp.fluid.src
               : main.image
           })`,
-          backgroundPosition: `top left`,
+          backgroundPosition: `top left`
         }}
       >
         <div
@@ -37,7 +39,7 @@ export const IndexPageTemplate = ({
             lineHeight: "1",
             justifyContent: "space-around",
             alignItems: "center",
-            flexDirection: "column",
+            flexDirection: "column"
           }}
         >
           <img
@@ -62,27 +64,39 @@ export const IndexPageTemplate = ({
                       className="tile"
                       style={{ display: "flex", justifyContent: "center" }}
                     >
-                      <h1 className="title main-title">
+                      <h1 className="title main-title raleway">
                         {main.mainpitch.title}
                       </h1>
                     </div>
                     <div className="tile">
                       <h4
                         dangerouslySetInnerHTML={{
-                          __html: main.mainpitch.description,
+                          __html: main.mainpitch.description
                         }}
                       />
                     </div>
                   </div>
-                  <div className="columns">
-                    <div className="column is-12">
-                      <h3
-                        className="has-text-weight-semibold is-size-2"
+                  <div
+                    className="columns"
+                    style={{ justifyContent: "center" }}
+                  >
+                    <div
+                      className="column is-12"
+                      style={{
+                        border: "2px solid #024966",
+                        marginBottom: "16px",
+                        borderRadius: "4px",
+                        width: 'fit-content',
+                        padding: '16px'
+                      }}
+                    >
+                      <div
+                        className="has-text-weight-semibold is-size-3 raleway"
                         style={{ textAlign: "center" }}
                       >
-                        {main.heading}
-                      </h3>
-                      <p style={{ textAlign: "center" }}>{main.description}</p>
+                        {main.bannerHeading}
+                      </div>
+                      <p style={{ textAlign: "center" }}>{main.bannerText}</p>
                     </div>
                   </div>
                   <div className="sign-up">
@@ -110,6 +124,7 @@ export const IndexPageTemplate = ({
       <PricingSection {...pricing} />
       <HoursSection {...hours} />
       <AboutSection {...about} />
+      <TestimonialsSection {...testimonials} />
       <WaiverSection {...waiver} />
       <ContactSection {...contact} />
     </div>
@@ -120,7 +135,7 @@ IndexPageTemplate.propTypes = {
   main: PropTypes.object,
   hours: PropTypes.object,
   about: PropTypes.object,
-  pricing: PropTypes.object,
+  pricing: PropTypes.object
 };
 
 const IndexPage = ({ data }) => {
@@ -135,6 +150,7 @@ const IndexPage = ({ data }) => {
         pricing={frontmatter.pricing}
         contact={frontmatter.contact}
         waiver={frontmatter.waiver}
+        testimonials={frontmatter.testimonials}
       />
     </Layout>
   );
@@ -143,9 +159,9 @@ const IndexPage = ({ data }) => {
 IndexPage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
-      frontmatter: PropTypes.object,
-    }),
-  }),
+      frontmatter: PropTypes.object
+    })
+  })
 };
 
 export default IndexPage;
@@ -170,14 +186,14 @@ export const pageQuery = graphql`
               }
             }
           }
-          signup
-          heading
           subheading
           mainpitch {
             title
             description
           }
-          description
+          bannerText
+          bannerHeading
+          signup
         }
         pricing {
           heading
@@ -230,6 +246,14 @@ export const pageQuery = graphql`
             }
           }
           body
+        }
+        testimonials {
+          heading
+          description
+          testimonials {
+            name
+            description
+          }
         }
         waiver {
           title

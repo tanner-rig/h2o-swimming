@@ -22,11 +22,11 @@ const Navbar = class extends React.Component {
         // set the class in state for the navbar accordingly
         this.state.active
           ? this.setState({
-              navBarActiveClass: "is-active",
-            })
+            navBarActiveClass: "is-active",
+          })
           : this.setState({
-              navBarActiveClass: "",
-            });
+            navBarActiveClass: "",
+          });
       }
     );
   };
@@ -58,39 +58,34 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
+            <div className="navbar-start has-text-centered" onClick={() => this.toggleHamburger()}>
               <Link
                 className="navbar-item"
                 to="#about"
-                onClick={() => this.toggleHamburger()}
               >
                 About
               </Link>
               <Link
                 className="navbar-item"
                 to="#pricing"
-                onClick={() => this.toggleHamburger()}
               >
                 Pricing
               </Link>
               <Link
                 className="navbar-item"
                 to="#hours"
-                onClick={() => this.toggleHamburger()}
               >
                 Hours
               </Link>
               <Link
                 className="navbar-item"
                 to="#waiver"
-                onClick={() => this.toggleHamburger()}
               >
                 Waiver
               </Link>
               <Link
                 className="navbar-item"
                 to="#contact"
-                onClick={() => this.toggleHamburger()}
               >
                 Contact
               </Link>

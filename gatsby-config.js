@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'H2O Swimming Lessons',
     description:
-      'H2O Swimming Lessons USA',
+      'H2O Swimming Lessons USA - based in Saratoga Springs, Utah',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

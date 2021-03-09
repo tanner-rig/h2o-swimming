@@ -7,7 +7,7 @@ export const HoursSection = ({ heading, description, image, days }) => (
         <div className="columns">
           <div className="column is-10 is-offset-1">
             <div style={{ textAlign: "center" }}>
-              <h2 className="has-text-weight-semibold is-size-2">{heading}</h2>
+              <h2 className="has-text-weight-semibold is-size-2 raleway">{heading}</h2>
               <p className="is-size-5" style={{ paddingBottom: "1rem" }}>
                 {description}
               </p>

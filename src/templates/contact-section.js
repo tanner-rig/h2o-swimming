@@ -32,7 +32,7 @@ export const ContactSection = ({ description, image }) => {
                 borderRadius: "5px",
               }}
             >
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+              <h2 className="title is-size-3 has-text-weight-bold is-bold-light raleway">
                 Contact us
               </h2>
               <div>
