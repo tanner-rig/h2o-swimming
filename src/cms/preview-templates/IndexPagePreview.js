@@ -14,6 +14,7 @@ const IndexPagePreview = ({ entry, getAsset }) => {
         about={data.about}
         contact={data.contact}
         waiver={data.waiver}
+        testimonials={data.testimonials}
       />
     )
   } else {
