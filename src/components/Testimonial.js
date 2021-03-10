@@ -2,19 +2,18 @@ import React from "react";
 import PropTypes from "prop-types";
 
 const Testimonial = ({ data = [] }) => (
-  <div className="pricing-column">
+  <div
+    className="testimonial-column"
+    style={{ display: "flex", flexDirection: "column" }}
+  >
     {data.map((testimonial, i) => (
       <div key={`testimonial-${i}`}>
-        <section
-          className="section"
-        >
-          <div style={{ display: 'flex', justifyContent: "center", width: "100%", marginBottom: '16px' }}>
+        <section style={{ padding: "1.5rem" }}>
+          <div style={{ display: "flex", width: "100%", marginBottom: "16px" }}>
             <h3
               className="title is-size-5 has-text-weight-bold is-bold-light"
               style={{
-                padding: "16px",
-                borderBottom: "3px solid #024966",
-                width: "fit-content"
+                width: "fit-content",
               }}
             >
               {testimonial.name}
@@ -22,7 +21,7 @@ const Testimonial = ({ data = [] }) => (
           </div>
 
           <p
-            className="has-text-weight-semibold has-text-centered"
+            className="has-text-weight-semibold"
             style={{ fontSize: "0.9rem" }}
           >
             "{testimonial.description}"
@@ -36,9 +35,9 @@ const Testimonial = ({ data = [] }) => (
 Testimonial.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({
-      description: PropTypes.string
+      description: PropTypes.string,
     })
-  )
+  ),
 };
 
 export default Testimonial;
