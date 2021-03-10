@@ -64,7 +64,7 @@ testimonials:
 waiver:
   title: Waiver Agreement
   description: Each swimmer will need to sign a waiver agreement before beginning lessons
-  waiverLink: https://drive.google.com/file/d/1_eCWiOwxzLBSlh4qPxt86tTiI_51YHyr/view?usp=sharing
+  waiverLink: https://drive.google.com/file/d/1_S4OCma-36xBPJG5Cip8-d1jO6YgaJjO/view
 contact:
   description: Contact Coach Jenny through email at <a href="mailto:texascoachH2O@gmail.com">texascoachH2O@gmail.com</a>
   image: /img/swimming-pool-tube.jpg
