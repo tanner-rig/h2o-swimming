@@ -27,7 +27,7 @@ pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson per swimmer.
   image: /img/bubbles.jpg
-  venmo: https://venmo.com/Jennifer-Morris-308
+  venmo: https://venmo.com/H2OSwimming
   plans:
     - description: Swimmers will be placed in a group of 4 to 6 kids
       plan: Group
