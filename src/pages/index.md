@@ -20,9 +20,8 @@ main:
       /><br /> If you just keep swimming down the page, you'll find all the
       information needed to start with this school of fish."
   bannerHeading: ""
-  bannerText: Registration will be available in May; please check back here to
-    schedule lessons!
-  signup: ""
+  bannerText: Please look over the contract and waiver before signing up below. Thanks!
+  signup: https://www.signupgenius.com/go/60b054aabab2ea57-summer3
 pricing:
   heading: Base Rates
   description: Pricing below is per 1/2 hour lesson per swimmer.
