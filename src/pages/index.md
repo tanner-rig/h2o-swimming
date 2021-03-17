@@ -40,7 +40,9 @@ pricing:
       price: $30 + $15
 hours:
   heading: Hours
-  description: Hours are from 11:00am to 4:00pm M-Th
+  description: Hours are from 11am to 4pm Mon - Thu. Learn to swim lessons are
+    three days a week (MTW) for two weeks, unless I have spoken with you
+    personally.
   image: /img/girls-swimming.jpg
   days:
     - day: Monday - Wednesday
