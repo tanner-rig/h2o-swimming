@@ -23,7 +23,7 @@ main:
   bannerText: Please look over the contract and waiver before signing up below. Thanks!
   signup: https://www.signupgenius.com/go/60b054aabab2ea57-summer3
 pricing:
-  heading: Base Rates
+  heading: Rates
   description: Pricing below is per 1/2 hour lesson per swimmer.
   image: /img/bubbles.jpg
   venmo: https://venmo.com/H2OSwimming
@@ -40,9 +40,9 @@ pricing:
       price: $30 + $15
 hours:
   heading: Hours
-  description: Hours are from 11am to 4pm Mon - Thu. Learn to swim lessons are
-    three days a week (MTW) for two weeks, unless I have spoken with you
-    personally.
+  description: Hours are from 11am to 4pm Mon - Thurs. Learn to swim lessons are
+    three days a week (MTW) for two consecutive weeks, unless otherwise
+    personally arranged.
   image: /img/girls-swimming.jpg
   days:
     - day: Monday - Wednesday
