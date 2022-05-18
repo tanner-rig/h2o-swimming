@@ -20,36 +20,35 @@ main:
       /><br /> If you just keep swimming down the page, you'll find all the
       information needed to start with this school of fish."
   bannerHeading: ""
-  bannerText: Please look over the contract and waiver before signing up below. Thanks!
-  signup: https://www.signupgenius.com/go/60b054aabab2ea57-summer3
+  bannerText: Please email me below to be added to our email sign-ups, thanks!
+  signup: mailto:texascoachh2o@gmail.com
 pricing:
   heading: Rates
-  description: Pricing below is per 1/2 hour lesson per swimmer.
+  description: Pricing below is per 20 min. lesson per swimmer
   image: /img/bubbles.jpg
   venmo: https://venmo.com/H2OSwimming
   plans:
-    - description: Swimmers will be placed in a group of 4 to 6 kids
+    - description: Group consists of 4 to 6 swimmers
       plan: Group
-      price: $20
-    - description: For the swimmers that need one on one time
-      plan: Private
-      price: $30
-    - description: $30 for the first swimmer then $15 for each additional sibling up
-        to 4 swimmers (must be siblings)
-      plan: Semi-Private
-      price: $30 + $15
+      price: $25
+    - description: "Returning swimmers and Referrals. "
+      plan: Ask coach for
+      price: "Discounts:"
+    - description: On Thursdays
+      plan: Adult Swim/Stroke Development
+      price: $35/30min.
 hours:
   heading: Hours
-  description: Hours are from 11am to 4pm Mon - Thurs. Learn to swim lessons are
-    three days a week (MTW) for two consecutive weeks, unless otherwise
-    personally arranged.
+  description: Hours TBA and are held Mon - Thurs. Learn to swim lessons are three
+    days a week (MTW) for two consecutive weeks, unless otherwise personally
+    arranged.
   image: /img/girls-swimming.jpg
   days:
     - day: Monday - Wednesday
-      topic: Learn to swim (Group/Private/Semi-Private)
+      topic: Learn to swim (Group)
       description: Bubbles/face in the water, breath, arms with noodle, legs with kickboard
     - day: Thursday
-      topic: Stroke development (Private/Semi-Private)
+      topic: Adult Swim/Stroke development
       description: Side breathing, streamline, ready position, legal stroke, flip turns
 about:
   title: About Two Parts Heart, One Part Obsession (H2O)
@@ -70,8 +69,8 @@ about:
     learn to swim and stroke improvement. Her credentials include USA swim, SI
     and CPR certified. She finds such joy in watching swimmers meet their own
     goals and expectations, while bringing excitement and fun to the kids. <br
-    /><br /> Coach Jenny has three fish of her own, Jacie - 16, Cole - 14, and
-    Sadie - 10. They are all excited to be here in Utah to enjoy and adapt in
+    /><br /> Coach Jenny has three fish of her own, Jacie - 18, Cole - 16, and
+    Sadie - 12. They are all excited to be here in Utah to enjoy and adapt in
     their new community. She hopes her passion for the sport of swimming will
     show through to the swimmers and parents.
   image: /img/jenny.jpg
